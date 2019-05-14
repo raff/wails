@@ -39,7 +39,7 @@ func CreateApp(optionalConfig ...*AppConfig) *App {
 
 	result := &App{
 		logLevel:       "info",
-		renderer:       &webViewRenderer{},
+		renderer:       &ultralightRenderer{}, // &webViewRenderer{},
 		ipc:            newIPCManager(),
 		bindingManager: newBindingManager(),
 		eventManager:   newEventManager(),
